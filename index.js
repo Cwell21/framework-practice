@@ -35,7 +35,17 @@ var app = new Vue({
       }else {
         this.alligators = gators
       }
+    },
+    sortAsc: function() {
+      console.log("Sort Asc")
+      this.alligators = gators.sort(function(a, b){return a.weight - b.weight})
+      
+    },
+    sortDesc: function() {
+      console.log("Sort Desc")
+       this.alligators = gators.sort(function(a, b){return b.weight - a.weight})
     }
+    
   }
 })
 

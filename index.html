@@ -24,6 +24,13 @@
           <input v-on:change="filter()" type="checkbox" id="icecream">
           Only show alligators that like ice cream
         </label>
+        <br>
+        <button v-on:click="sortAsc()">Sort By Weight, Ascending</button>
+        
+        <br>
+        <button v-on:click="sortDesc()">Sort by Weight, Descending</button>
+        
+        <br>
         <button v-on:click="test()">Click me!</button>
       </div>
      
