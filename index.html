@@ -21,9 +21,10 @@
     
       <div class="filters">
         <label>
-          <input type="checkbox" name="icecream">
+          <input v-on:change="filter()" type="checkbox" id="icecream">
           Only show alligators that like ice cream
         </label>
+        <button v-on:click="test()">Click me!</button>
       </div>
      
       <section class="profile-container">
