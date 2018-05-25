@@ -31,7 +31,7 @@ var app = new Vue({
       console.log("filter was called")
       //if checkbox is checked set this.alligators to only likesIceCream ===true
       if(document.getElementById("icecream").checked){
-       this.alligators = gators.filter(gator => gator.likesIceCream)
+       this.alligators = gators.filter(g => g.likesIceCream)
       }else {
         this.alligators = gators
       }
